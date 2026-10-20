@@ -1,5 +1,58 @@
 # Changelog
 
+## [0.3.0](https://github.com/maltzsama/baleia/compare/v0.2.0...v0.3.0) (2026-10-20)
+
+
+### Features
+
+* **agents:** add the agents area, meta and eligibility ([#120](https://github.com/maltzsama/baleia/issues/120)) ([36a3a93](https://github.com/maltzsama/baleia/commit/36a3a931e6e26ee7e460ddbc064fddba3ece8cf0))
+* **agents:** add the agents area, meta and eligibility ([#120](https://github.com/maltzsama/baleia/issues/120)) ([63e5869](https://github.com/maltzsama/baleia/commit/63e5869728b667a169877d048f22e4670af1dbdc))
+* **api:** close the error-code contract ([#67](https://github.com/maltzsama/baleia/issues/67)) ([c2983b8](https://github.com/maltzsama/baleia/commit/c2983b848e0412c5c9bf05112b6c4e03f1f8268c))
+* **assistant:** add providers, the MCP turn engine and SSE ([#62](https://github.com/maltzsama/baleia/issues/62)) ([5ceb740](https://github.com/maltzsama/baleia/commit/5ceb740ce33e875dd7ebbb224182cd690229b024))
+* **assistant:** add settings, conversations and the assistant agent ([#62](https://github.com/maltzsama/baleia/issues/62)) ([b72b2e2](https://github.com/maltzsama/baleia/commit/b72b2e21d22caadef3368c817b58fc9c49ae26ac))
+* **assistant:** add settings, conversations and the assistant agent ([#62](https://github.com/maltzsama/baleia/issues/62)) ([41940d2](https://github.com/maltzsama/baleia/commit/41940d28f8d8b55cfda388b353d053e3c6a6a55d))
+* **assistant:** add the chat panel and settings page ([#63](https://github.com/maltzsama/baleia/issues/63)) ([b765fa4](https://github.com/maltzsama/baleia/commit/b765fa4786ed27ddda54429814eafa9d184f6fd4))
+* **assistant:** add the chat panel and settings page ([#63](https://github.com/maltzsama/baleia/issues/63)) ([1348b30](https://github.com/maltzsama/baleia/commit/1348b30063f54daec6f59569753482690e3be21b))
+* **crypto:** add a dedicated registry keyring ([#200](https://github.com/maltzsama/baleia/issues/200)) ([7e615cb](https://github.com/maltzsama/baleia/commit/7e615cb8b1691f4129f6ab54050a8f1966db7374))
+* **deploy:** gate the plugin's Phase B property ([#200](https://github.com/maltzsama/baleia/issues/200)) ([01a7cba](https://github.com/maltzsama/baleia/commit/01a7cbaf67ddc22a8148147ceb7d94b55a03eab6))
+* **deploy:** wire BALEIA_REGISTRY_KEY and document Phase B ([#200](https://github.com/maltzsama/baleia/issues/200)) ([2259dfc](https://github.com/maltzsama/baleia/commit/2259dfcacb9b6362ef5fb386db30c064efe741ef))
+* **i18n:** internationalize the UI, API errors and e-mails ([#67](https://github.com/maltzsama/baleia/issues/67)) ([54446ef](https://github.com/maltzsama/baleia/commit/54446ef912305e33bcf3b546d0ea92b9fffa8989))
+* **mail:** localize transactional e-mails ([#67](https://github.com/maltzsama/baleia/issues/67)) ([f98f832](https://github.com/maltzsama/baleia/commit/f98f83202857d96fe2256117b11fe9c9bbec3286))
+* seal catalog-registry values at rest (Phase B of [#31](https://github.com/maltzsama/baleia/issues/31) / [#200](https://github.com/maltzsama/baleia/issues/200)) ([14fb7dc](https://github.com/maltzsama/baleia/commit/14fb7dc15a4e2f615cf1fa9eb5228e423ef5eadb))
+* **trino:** seal catalog-registry secrets at rest ([#200](https://github.com/maltzsama/baleia/issues/200)) ([5014924](https://github.com/maltzsama/baleia/commit/5014924c4b8b7e051d5b2c926153216ee67c0210))
+* **users:** persist the UI locale ([#67](https://github.com/maltzsama/baleia/issues/67)) ([9ec624c](https://github.com/maltzsama/baleia/commit/9ec624c74a057fbb6e34bfe9649e9f858527b17c))
+* **web:** compile Paraglide messages and select the UI locale ([#67](https://github.com/maltzsama/baleia/issues/67)) ([b757503](https://github.com/maltzsama/baleia/commit/b757503fa6c1d091a75a8c22c0ec93e1f1560238))
+* **web:** extract all UI copy to Paraglide and enable the guard ([#67](https://github.com/maltzsama/baleia/issues/67)) ([09dd7da](https://github.com/maltzsama/baleia/commit/09dd7da0fabe463c1cf003bd799f2f4ba02aa6f8))
+
+
+### Bug Fixes
+
+* **api:** close the enum over engine error codes ([#67](https://github.com/maltzsama/baleia/issues/67)) ([eb9184b](https://github.com/maltzsama/baleia/commit/eb9184b71656d5f0fdb2ebb3fabd213ceb891e5a))
+* **catalogs:** classify decode failures and redact credentials in logs ([0ed53c6](https://github.com/maltzsama/baleia/commit/0ed53c6f82a3723af9940fb7c7b015039e2ca498))
+* **credentials:** classify decode failures and redact credentials in logs ([e7ed4f4](https://github.com/maltzsama/baleia/commit/e7ed4f4db6cf89c2b84fd623257c66060f8623f1))
+* **dev:** define TEMPORAL_UI_PORT explicitly in the temporal-ui deployment ([#356](https://github.com/maltzsama/baleia/issues/356)) ([ed7ffff](https://github.com/maltzsama/baleia/commit/ed7ffff8f3690c9a3797fcdec2b4f5930a02bd4d))
+* **dev:** restart api and worker after the k8s-up helm upgrade ([#357](https://github.com/maltzsama/baleia/issues/357)) ([26cd2e4](https://github.com/maltzsama/baleia/commit/26cd2e481220d134f5eaaaa149fe434547c715ba))
+* **dev:** stop the Temporal UI crashloop and make k8s-up deploy the rebuilt image ([9c9b9fd](https://github.com/maltzsama/baleia/commit/9c9b9fda8bc63e68208c4adabbf0ad06727385c8))
+* **dialect:** fail loudly on a missing embedded word list ([92d5ce1](https://github.com/maltzsama/baleia/commit/92d5ce19c74fd0fad7da10350bd81ecca681414e))
+* **dialect:** fail loudly on a missing embedded word list ([95f7bdd](https://github.com/maltzsama/baleia/commit/95f7bdd3fd67516c6ee501db546c9d7ab8590c5a)), closes [#345](https://github.com/maltzsama/baleia/issues/345)
+* **providers:** classify stored config/credentials parse failures ([#349](https://github.com/maltzsama/baleia/issues/349)) ([5d8d6af](https://github.com/maltzsama/baleia/commit/5d8d6af15690cf35c2ea631232282bda7bc5fb20))
+* **release:** accept a release created by a concurrent run ([832d5d4](https://github.com/maltzsama/baleia/commit/832d5d48eea3a27e239f027adea9cd8b1a2e0487))
+* **release:** accept a release created by a concurrent run ([8e09378](https://github.com/maltzsama/baleia/commit/8e0937865c0a1266d2bbbc77c17b456c05ea7551))
+* **release:** pass the repository to gh release view ([5167c8e](https://github.com/maltzsama/baleia/commit/5167c8ec50f412bf1b64aed9a9b264fd417d0659))
+* **scripts:** make the smoke test executable ([#64](https://github.com/maltzsama/baleia/issues/64)) ([d48f9f7](https://github.com/maltzsama/baleia/commit/d48f9f7f98d7d6b3385c8e2e50a95f5e06daeeeb))
+* **scripts:** seed a workspace target for the smoke test ([#64](https://github.com/maltzsama/baleia/issues/64)) ([74ae6f0](https://github.com/maltzsama/baleia/commit/74ae6f0bb66bc43b6d5a48cab9b5a566e733cd3b))
+
+
+### Miscellaneous
+
+* **api:** drop the superseded mailer ([#67](https://github.com/maltzsama/baleia/issues/67)) ([05a360b](https://github.com/maltzsama/baleia/commit/05a360b039fffce2e22bd2ff1e43c6cc89d32ff1))
+* **dialect:** hoist ForEngineKind's kind map out of the call path ([f6c4fda](https://github.com/maltzsama/baleia/commit/f6c4fdaa7f897e4c4df172b42fa6dc63307287e4)), closes [#347](https://github.com/maltzsama/baleia/issues/347)
+
+
+### Documentation
+
+* record the i18n and error-code rules ([#67](https://github.com/maltzsama/baleia/issues/67)) ([180a2c9](https://github.com/maltzsama/baleia/commit/180a2c9f838a5f7b4dbe2aa0cf58ca82118199df))
+
 ## [0.2.0](https://github.com/maltzsama/baleia/compare/v0.1.0...v0.2.0) (2026-10-19)
 
 
